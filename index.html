@@ -1,11 +1,59 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="refresh" content="0;url=https://panrot.com">
-    <head>
-    <title>MagickNavi</title>
+    <link rel="icon" href="favicon.ico">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="rotation.js"></script>
+    <script type="text/javascript">
+      $(function() {
+	  console.log( "ready!" );
+      });
+    </script>
+    <style type="text/css">
+      body {
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      a:link { color: #0000f0 ; }
+      a:visited { color: #0000f0 ; }
+      a {
+	  text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    aaaa
+    <h1>MagicNavi</h1>
+    <ul>
+      <li>左右の矢印キーを高速に押すとVolumeの値が変わり、ゆっくり押すとChannelの値が変わるという挙動の実験</li>
+      <li>高速に押すと音量調整 / ゆっくり押すとコンテンツ選択 としたい</li>
+      <li>これを回転ダイヤルでやりたい</li>
+      <li><a href="https://scrapbox.io/MagickNavi">Scrapbox</li>
+      <li><a href="https://github.com/masui/MagickNavi">GitHub</a></li>
+    </ul>
+
+
+    <blockquote>
+      <div style="font-size:20pt;">
+	<b id='volume'>Volume</b>: <span id='fast'>0</span>
+      </div>
+      <div style="font-size:20pt;">
+	<b id='channel'>Channel</b>: <span id='slow'>0</span>
+      </div>
+      <!--
+      <div>
+	<b>state</b>: <span id='state'>0</span>
+      </div>
+      -->
+    </blockquote>
+
+
+  <body>
+    <!-- <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/AjUXr3LMT_s" autoplay></iframe> -->
+    <!-- <video id='video' width="560" height="315" src="https://www.youtube.com/embed/AjUXr3LMT_s" autoplay></video> -->
+    <video id='video' type="video/mp4" controls width="560" height="315" src="https://s3-ap-northeast-1.amazonaws.com/masui.org/7/f/7f8206f5cc4bdd8c6ec60024b5ccfa67.mp4" autoplay></video>
+    
+  </body>
+
+    
   </body>
 </html>
